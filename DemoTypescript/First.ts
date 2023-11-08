@@ -25,3 +25,8 @@ for(var i=0;i<fruits.length;i++)
 function sayHello():void{
     console.log('Hello World')
 }
+function multiply(a:number,b:number):number{
+    return a*b
+}
+sayHello()
+console.log(multiply(4,5))
