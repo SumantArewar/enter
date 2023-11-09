@@ -20,6 +20,14 @@ export class SimpleComponent implements OnInit {
     {id:126,name:'Jay',salary:50000,city:'Chennai'},
     {id:128,name:'Atul',salary:60000,city:'Banglore'}
   ]
+  GetTotal():number
+  {
+    var total:number=0;
+    for(var i = 0;i<this.emplist.length;i++)
+    {
+      total = total + this.emplist[i].salary
+    }
+  }
 
   constructor() { }
 
