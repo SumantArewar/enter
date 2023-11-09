@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DemoComponent implements OnInit {
 
+  name:string = 'Tom'
+  age:number = 33
+
   constructor() { }
 
   ngOnInit() {
