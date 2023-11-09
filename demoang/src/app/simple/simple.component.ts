@@ -13,6 +13,13 @@ export class SimpleComponent implements OnInit {
   age:number=25
 
   emp:Employee= {id:123,name:'Tom',salary:40000,city:'Mumbai'}
+  emplist:Employee[]=[
+    {id:123,name:'Tom',salary:40000,city:'Mumbai'},
+    {id:124,name:'Raj',salary:70000,city:'Pune'},
+    {id:120,name:'Bob',salary:80000,city:'Delhi'},
+    {id:126,name:'Jay',salary:50000,city:'Chennai'},
+    {id:128,name:'Ali',salary:60000,city:'Banglore'}
+  ]
 
   constructor() { }
 
