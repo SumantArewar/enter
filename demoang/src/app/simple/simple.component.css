@@ -8,9 +8,28 @@ h1
 {
     background-color:coral ;
     color:blue;
-    text-align:centre;
+    text-align:center;
 }
 table
 {
-       
+    width:100%;
+    align-items:center;   
+}
+tr:nth-child(even)
+{
+    background-color:lightgreen ;
+}
+tr:nth-child(odd)
+{
+    background-color:lightpink ;
+}
+tr:hover
+{
+    background-color:yellow ;
+    color: blueviolet;
+}
+th
+{
+    font-weight: bolder;
+    text-align: center;
 }
