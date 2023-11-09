@@ -1,0 +1,20 @@
+<h3>Week Days</h3>
+<ul *ngFor = "let day of weekdays;let i=index">
+    <li>{{i+1}}--{{day}}</li>  <!-- {{}} is used for String Interpolation -->
+</ul>
+<ng-container *ngIf="age >= 22;else elseTemplate">
+    <b>Suitable for Marriage</b>
+</ng-container> 
+<ng-template #elseTemplate>
+    <u>Not Ready</u>
+</ng-template>
+<hr>
+
+<ul *ngFor = "let day of weekdays">
+    <ng-container *ngIf = "(day == 'sunday' || day == 'saturday');else elseTemplate">
+        <li style ="color:red">{{day}} is a Weekend</li>
+    </ng-container>
+    <ng-template #elseTemplate>
+        <li style = "color: blue">{{day}} is a working day</li>
+    </ng-template>
+</ul>
