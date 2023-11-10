@@ -27,6 +27,7 @@ export class SimpleComponent implements OnInit {
     {
       total = total + this.emplist[i].salary
     }
+    return total
   }
 
   constructor() { }
