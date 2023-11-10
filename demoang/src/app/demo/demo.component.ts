@@ -19,7 +19,6 @@ export class DemoComponent implements OnInit {
   {
     alert('Name is '+ this.name + ' Age is '+ this.age)
   }
-
   constructor() { }
 
   ngOnInit() {

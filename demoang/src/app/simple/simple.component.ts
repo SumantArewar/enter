@@ -29,8 +29,9 @@ export class SimpleComponent implements OnInit {
     }
     return total
   }
+  todaydate:number = Date.now();
 
-  constructor() { }
+  constructor(private msgservice:Message) { }
 
   ngOnInit() {
   }
