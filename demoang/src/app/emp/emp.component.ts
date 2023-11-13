@@ -11,13 +11,16 @@ export class EmpComponent implements OnInit {
 
   constructor(private formbuilder:FormBuilder) { }
   empform = this.formbuilder.group({
-    firstname:[''],
-    age:[''],
-    address:this.formbuilder.group({
-      line:[''],
-      city:[''],
-      state:['']
-    })
+    name :['',[Validators.required,Validators.maxLength(30)]],
+    email:['',Validators.email],
+    city:['', Validators.pattern]
+    // firstname:[''],
+    // age:[''],
+    // address:this.formbuilder.group({
+    //   line:[''],
+    //   city:[''],
+    //   state:['']
+    // })
   })
 
   ngOnInit() {
