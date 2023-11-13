@@ -13,7 +13,7 @@ export class EmpComponent implements OnInit {
   empform = this.formbuilder.group({
     name :['',[Validators.required,Validators.maxLength(30)]],
     email:['',Validators.email],
-    city:['', Validators.pattern]
+    city:['', Validators.pattern("[a-zA-Z]")]
     // firstname:[''],
     // age:[''],
     // address:this.formbuilder.group({
