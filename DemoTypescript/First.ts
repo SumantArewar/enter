@@ -22,10 +22,12 @@ for(var i=0;i<fruits.length;i++)
 {
     console.log(fruits[i])
 }
-function sayHello():void{
+function sayHello():void
+{
     console.log('Hello World')
 }
-function multiply(a:number,b:number):number{
+function multiply(a:number,b:number):number
+{
     return a*b
 }
 sayHello()
